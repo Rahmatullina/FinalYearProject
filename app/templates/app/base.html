@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html>
+<header>
+  <link rel="stylesheet" href="{% static "app/styles/form_style.css" %}">
+
+       <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</header>
+<body style="font-size: 10.5pt;font-family: 'Trebuchet MS', 'Arial', 'Tahoma', 'Verdana', 'sans-serif';">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#"></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Форма самообследования предоставления государственных и муниципальных услуг в электронной форме
+        </a>
+        </li>
+    </ul>
+          <form class="form-inline my-2 my-lg-0">
+    <button type="button" class="btn btn-outline-success my-2 my-sm-3" onclick="window.location.href='/login/'">Войти</button>
+    </form>
+  </div>
+</nav>
+
+<a class="top-sitename"><img class="top-sitename__logo" style="height:80px;margin-top:3%;" src="{% static "app/images/inform_logo.jpg" %}">
+              <span class="top-sitename__title">Государственный комитет Республики Башкортостан по информатизации и вопросам функционирования системы «Открытая Республика»</span>
+</a>
+{% block content %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,138 @@
+{% load static %}
+<html>
+<header>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS 3.3.7 and 4.3.1. for top menu -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="{% static "app/styles/result_form_style.css" %}">
+</header>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#"></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><img src="{% static "app/images/calendar.png" %}" style="height:37px; margin-left:10%;padding: 10px 5px 0px 0px">
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ month }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/01/">Январь</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/02/">Февраль</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/03/">Март</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/04/">Апрель</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/05/">Май</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/06/">Июнь</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/07/">Июль</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/08/">Август</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/09/">Сентябрь</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/10/">Октябрь</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/11/">Ноябрь</a>
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/12/">Декабрь</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         {{ year }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            {% for y in years %}
+          <a class="dropdown-item" href="/result_form/not_sent/{{ y }}/{{ num_month }}/">{{ y }}</a>
+            <div class="dropdown-divider"></div>
+            {% endfor %}
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Фильтр по районам
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/{{ num_month }}/">Не заполнившие форму</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/result_form/with_troubles/{{ year }}/{{ num_month }}">Имеющие неполадки в работе электронных услуг</a>
+            <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/result_form/with_no_troubles/{{ year }}/{{ num_month }}">Не имеющие неполадки в работе электронных услуг</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Фильтр по услугам
+        </a>
+        <div class="dropdown-menu"  aria-labelledby="navbarDropdown4" style="height:400px;width:900px;overflow-y: scroll;">
+            {% for item in zipped_service_names %}
+                <a class="dropdown-item" href="/result_form/{{ item.1}}/{{ year }}/{{ num_month }}/">{{ item.0 }}</a>
+                <div class="dropdown-divider"></div>
+            {% endfor %}
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Выбор района
+        </a>
+        <div class="dropdown-menu" style="height:400px;overflow-y: scroll;" aria-labelledby="navbarDropdown5">
+          {% for name in zipped %}
+                <a class="dropdown-item" href="/result_form/{{ year }}/{{ num_month }}/{{ name.1 }}/">{{ name.0 }}</a>
+          {%  endfor %}
+        </div>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/form/">Заполнить форму</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Экспортировать данные районов в Exel
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+            <a class="dropdown-item" href="/export/with_troubles/{{ year }}/{{ num_month }}">Имеющие неполадки в работе электронных услуг за выбранный период времени</a>
+            <a class="dropdown-item" href="/export/not_sent/{{ year }}/{{ num_month }}">Не заполнившие форму за выбранный период времени</a>
+            <a class="dropdown-item" href="/export/all/{{ year }}/{{ num_month }}">За выбранный период</a>
+        </div>
+        </li>
+        <li class="nav-item"><img src="{% static "app/images/user4.png" %}" style="height:40px; margin-left:10%">
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/profile/">{{ username }}</a>
+        </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button type="button" class="btn btn-outline-success" onclick="window.location.href='/logout/'">Выйти</button>
+    </form>
+  </div>
+</nav>
+
+<a class="top-sitename"><img class="top-sitename__logo" style="height:80px;margin-top:3%" src="{% static "app/images/inform_logo.jpg" %}">
+              <span class="top-sitename__title">Государственный комитет Республики Башкортостан по информатизации и вопросам функционирования системы «Открытая Республика»</span>
+</a>
+<div class="background-form">
+<div class="main-form">
+<div class="my-form">
+<div style="margin-top: 50px" align="center" >
+    <p class="title">Районы, не имеющие неполадки в работе государственных и муниципальных услуг в электронной форме (Администрация мунципального района Республики Башкортостан.) за выбранный месяц.</p>
+
+{% for name in zipped_names %}
+    <a href="/result_form/{{ year }}/{{ num_month }}/{{ name.1 }}" ><p style="margin-left: 10px; margin-top: 10px;" align="left">{{ name.0 }}</p></a>
+{% endfor %}
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

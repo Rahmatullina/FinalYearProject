@@ -1,0 +1,35 @@
+version: 2.1
+orbs:
+   heroku: circleci/heroku@1.0.1 # Use the Heroku orb in your config
+   python: circleci/python@0.2.1
+
+jobs:
+  build:
+    working_directory: ~/GridAndCloudServer
+    docker:
+      - image: circleci/python:3.6.4
+        environment:
+          PIPENV_VENV_IN_PROJECT: true
+          DATABASE_URL: postgres://jxoezaorsgkiqv:9c56ec52b169e7ba136fe68a85c7234bfa2aba8a0ec75b267e47ab9a4742883d@ec2-52-86-33-50.compute-1.amazonaws.com:5432/d7o5eus93nmosd
+      - image: circleci/postgres:9.6.2
+        environment:
+          POSTGRES_USER: jxoezaorsgkiqv
+          POSTGRES_DB: d7o5eus93nmosd
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+      - run:
+          name: Test
+          command: python manage.py test
+workflows:
+   heroku_deploy:
+     jobs:
+       - build
+       - heroku/deploy-via-git:
+           requires:
+             - build # only run deploy-via-git job if the build job has completed
+           filters:
+             branches:
+               only: master # only run deploy-via-git job on master branch

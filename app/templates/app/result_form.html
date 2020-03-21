@@ -1,0 +1,198 @@
+{% load static %}
+<html xmlns="http://www.w3.org/1999/html">
+<header>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS 3.3.7 and 4.3.1. for top menu -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static "app/styles/result_form_style.css" %}">
+
+    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+</header>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#"></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><img src="{% static "app/images/calendar.png" %}" style="height:37px; margin-left:10%;padding: 10px 5px 0px 0px">
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ month }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/01/">Январь</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/02/">Февраль</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/03/">Март</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/04/">Апрель</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/05/">Май</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/06/">Июнь</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/07/">Июль</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/08/">Август</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/09/">Сентябрь</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/10/">Октябрь</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/11/">Ноябрь</a>
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ year }}/12/">Декабрь</a>
+          </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         {{ year }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            {% for y in years %}
+          <a class="dropdown-item" href="/result_form/{{ service_name }}/{{ y }}/{{ num_month }}/">{{ y }}</a>
+            <div class="dropdown-divider"></div>
+            {% endfor %}
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Фильтр по районам
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+          <a class="dropdown-item" href="/result_form/not_sent/{{ year }}/{{ num_month }}/">Не заполнившие форму</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/result_form/with_troubles/{{ year }}/{{ num_month }}">Имеющие неполадки в работе электронных услуг</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/result_form/with_no_troubles/{{ year }}/{{ num_month }}">Не имеющие неполадки в работе электронных услуг</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Фильтр по услугам
+        </a>
+        <div class="dropdown-menu"  aria-labelledby="navbarDropdown4" style="height:400px;width:900px;overflow-y: scroll;">
+            {% for item in zipped_service_names %}
+                <a class="dropdown-item" href="/result_form/{{ item.1}}/{{ year }}/{{ num_month }}/">{{ item.0 }}</a>
+                <div class="dropdown-divider"></div>
+            {% endfor %}
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Выбор района
+        </a>
+        <div class="dropdown-menu" style="height:400px;overflow-y: scroll;" aria-labelledby="navbarDropdown5">
+          {% for name in zipped %}
+                <a class="dropdown-item" href="/result_form/{{ year }}/{{ num_month }}/{{ name.1 }}/">{{ name.0 }}</a>
+          {%  endfor %}
+        </div>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/form/">Заполнить форму</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Экспортировать данные районов в Exel
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+            <a class="dropdown-item" href="/export/with_troubles/{{ year }}/{{ num_month }}">Имеющие неполадки в работе электронных услуг за выбранный период времени</a>
+            <a class="dropdown-item" href="/export/not_sent/{{ year }}/{{ num_month }}">Не заполнившие форму за выбранный период времени</a>
+            <a class="dropdown-item" href="/export/all/{{ year }}/{{ num_month }}">За выбранный период</a>
+        </div>
+        </li>
+        <li class="nav-item"><img src="{% static "app/images/user4.png" %}" style="height:40px; margin-left:10%">
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/profile/">{{ username }}</a>
+        </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    <button type="button" class="btn btn-outline-success" onclick="window.location.href='/logout/'">Выйти</button>
+    </form>
+  </div>
+</nav>
+<a class="top-sitename"><img class="top-sitename__logo" style="height:80px;margin-top:3%" src="{% static "app/images/inform_logo.jpg" %}">
+<span class="top-sitename__title">Государственный комитет Республики Башкортостан по информатизации и вопросам функционирования системы «Открытая Республика»</span>
+</a>
+<div class="background-form">
+<div class="main-form">
+<div class="my-form">
+<div style="margin-top: 50px" align="center" >
+    <a class="title">Форма самообследования предоставления государственных и муниципальных услуг в электронной форме (Администрация мунципального района Республики Башкортостан.)</a>
+<div>
+<div>
+<p align="center" style="margin-top: 10px;color: #22252d;font-size: 150%;">Наименование услуги: {{ full_service_name }}</div>
+<table>
+ <thead>
+ <tr>
+   <th data-campo='name' rowspan="3">Наименование муниципального образования</th>
+	 <th data-campo='Id' rowspan="3">Идентификатор услуги в РГМУ</th>
+   <th data-campo='amount' rowspan="3">Количество заявлений поданных на получение государственных/муниципальных услуг в традиционной форме (при личной явке в ведомство)
+в течение {{ num_month }}.{{ year }} г., шт. (количество указывается нарастающим итогом).</th>
+     <th data-campo='exploring' colspan="13" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Единый портал государственных и муниципальных услуг (www.gosuslugi.ru)/Региональный портал государственных и муниципальных услуг (www.gosuslugi.bashkortostan.ru).АИС СОЗ - автоматизированная информационная система 'Система обработки запросов'">Обследование действий, реализованных на порталах ЕПГУ/РПГУ,и в АИС СОЗ*</th>
+</tr>
+<tr>
+   <th data-campo='link' rowspan="2" data-toggle="tooltip" data-placement="bottom" data-container="body" title="В случае изменения ссылка будет актуализирована. Подать заявление в электронном виде можно перейдя по следующей(им) ссылкам.">Ссылка на услугу *</th>
+   <th data-campo='record' rowspan="2">Возможность предварительной записи на прием в орган власти для подачи заявления при личном приеме</th>
+   <th data-campo='hasButton' rowspan="2" data-toggle="tooltip" data-placement="bottom" data-container="body" title="В случае отрицательного ответа необходимо принять меры по устранению и направить соответствующую заявку в техподдержку на адрес электронной почты support@bashkortostan.ru, тел. (347) 218-00-00">Наличие кнопки "Получить услугу"*</th>
+   <th data-campo='reglament' rowspan="2">Актуальный администра<wbr>-тивный регламент предоставления услуги размещен, и доступен для просмотра на РПГУи ЕПГУ</th>
+   <th data-campo='quality' rowspan="2">Возможность оценки качества предоставления услуги</th>
+    <th data-campo='isConnected' rowspan="2" data-toggle="tooltip" data-placement="bottom" data-container="body" title='В случае, если РОИВ и ОМСУ не отображается на интерактивной карте ФГИС ДО, необходимо подключиться к системе в соответствии с постановлением Правительства РФ от 20.11.2012 года № 1198 и протоколом РКАР от 26.05.2017 года № 2'>Орган власти подключен к  <span data-toggle="tooltip" data-placement="bottom" data-container="body" title="ФГИС ДО - Федеральная государственная информационная система досудебного обжалования">ФГИС ДО*</span></th>
+   <th data-campo='printing' rowspan="2">Возможность печати электронной формы заявления</th>
+   <th data-campo='edition' rowspan="2">Возможность редактировать черновик заявления</th>
+   <th data-campo="warning" colspan="3">Для положительного заполнения данного поля сотрудником, который исполняет заявку в электронном виде необходимо заполнять поля "коментраии" на этапах обработки заявления в АИС СОЗ/АИС Реестр сведений</th>
+   <th data-campo="availiblity" colspan="2">Доступность документов для скачивания: документы, которые сотрудник Администрации загружает через РГМУ (http://rgmu.bashkortostan.ru/<wbr>RGU_WAR_2/RGU2Auth.html;<wbr>jsessionid=05485FA39FE0E5668<wbr>7E14B716FA87C27) должны быть доступны для скачивания гражданами на соответствующей карточке услуги на ЕПГУ и РПГУ</th>
+</tr>
+<tr>
+   <th data-campo="term" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Да - текст уведомления содержит сведения о нормативных сроках рассмотрения заявления. Нет - данная информация отсуствтует.">Срок рассмотрения заявления (личный кабинет)*</th>
+   <th data-campo="notification" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Да - уведомление получено в течение 30 рабочих дней. Нет - уведомление не получено, либо получено позднее.">Уведомление о результате рассмотрения заявления в личном кабинете*</th>
+   <th data-comp="refusion" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Да - уведомление получено в течение 30 рабочих дней. Нет - уведомление (не путать со статусом 'Отказано') не получено, либо получено позднее (уведомление: отказано в предоставлении услуги в связи с ....).">Причины отказа (личный кабинет)*</th>
+   <th data-comp="example" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Да - есть образец документа. Нет - иначе.">Образец документа*</th>
+   <th data-comp="template" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Да - есть возможность заполнить шаблон (бланк) в электронном виде.Нет - иначе."> Шаблон (форма, бланк) документа*</th>
+</tr>
+ </thead>
+ <tbody>
+
+ {% for object in objects %}
+    <tr>
+   <td data-campo='name' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Наименование муниципального образования">{{ object.region_name }}</td>
+   <td {% if object.id_rgmu == "" %}bgcolor = '#eb5a21' {% endif %} data-campo='Id' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Идентификатор услуги в РГМУ">{{ object.id_rgmu}}</td>
+   <td {% if object.statement_amount == "" %}bgcolor = '#eb5a21' {% endif %} data-campo='amount' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Количество заявлений поданных на получение государственных/муниципальных услуг в традиционной форме (при личной явке в ведомство)за прошедший месяц, шт. (количество указывается нарастающим итогом)">{{ object.statement_amount }}</td>
+   <td {% if object.link == "" %}bgcolor = '#eb5a21' {% endif %} data-campo='link' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Ссылка на услугу *">{{ object.link }}</td>
+   <td {% if object.has_advanced_appointment_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_advanced_appointment_comment != 'Да' and object.has_advanced_appointment_comment != 'Не предусмотрено' and object.has_advanced_appointment_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='record' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Возможность предварительной записи на прием в орган власти для подачи заявления при личном приеме">{{ object.has_advanced_appointment_comment}}</td>
+   <td {% if object.has_btn_get_service_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_btn_get_service_comment != 'Да' and object.has_btn_get_service_comment != 'Не предусмотрено' and object.has_btn_get_service_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='hasButton' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Наличие кнопки 'Получить услугу'">{{ object.has_btn_get_service_comment }}</td>
+   <td {% if object.has_reglament_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_reglament_comment != 'Да' and object.has_reglament_comment != 'Не предусмотрено' and object.has_reglament_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='reglament' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Актуальный административный регламент предоставления услуги размещен, и доступен для просмотра на РПГУ и ЕПГУ">{{ object.has_reglament_comment }}</td>
+   <td {% if object.has_estimation_quality_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_estimation_quality_comment != 'Да' and object.has_estimation_quality_comment != 'Не предусмотрено' and object.has_estimation_quality_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='quality' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Возможность оценки качества предоставления услуги">{{ object.has_estimation_quality_comment }}</td>
+   <td {% if object.connected_to_fgis_do_comment == "" %}bgcolor = '#eb5a21' {% elif object.connected_to_fgis_do_comment != 'Да' and object.connected_to_fgis_do_comment != 'Не предусмотрено' and object.connected_to_fgis_do_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='isConnected' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Орган власти подключен к  ФГИС ДО">{{ object.connected_to_fgis_do_comment }}</td>
+   <td {% if object.has_electronic_form_printing_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_electronic_form_printing_comment != 'Да' and object.has_electronic_form_printing_comment != 'Не предусмотрено' and object.has_electronic_form_printing_comment != ""%}bgcolor = '#9c8880'{% endif %} data-campo='printing' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Возможность печати электронной формы заявления (в интерфейсе подачи заявления есть кнопка печати)">{{ object.has_electronic_form_printing_comment }}</td>
+   <td {% if object.has_edition_draft_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_edition_draft_comment != 'Да' and object.has_edition_draft_comment != 'Не предусмотрено' and object.has_edition_draft_comment != ""%}bgcolor = '#9c8880'{% endif %} data-campo='term' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Наличие в тексте уведомления сведений о нормативных сроках рассмотрения заявления (личный кабинет)">{{ object.has_edition_draft_comment }}</td>
+   <td {% if object.has_term_of_consideration_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_term_of_consideration_comment != 'Да' and object.has_term_of_consideration_comment != 'Не предусмотрено' and object.has_term_of_consideration_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='notification' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Уведомление о результате рассмотрения заявления в личном кабинете ( уведомление получено в течение 30 рабочих дней)">{{ object.has_notif_consider_result_comment }}</td>
+   <td {% if object.has_notif_consider_result_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_notif_consider_result_comment != 'Да' and object.has_notif_consider_result_comment != 'Не предусмотрено' and object.has_notif_consider_result_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='notification' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Уведомление о результате рассмотрения заявления в личном кабинете ( уведомление получено в течение 30 рабочих дней)">{{ object.has_notif_consider_result_comment }}</td>
+   <td {% if object.has_causes_of_failure_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_causes_of_failure_comment != 'Да' and object.has_causes_of_failure_comment != 'Не предусмотрено' and object.has_causes_of_failure_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='refusion' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Уведомление о причинах отказа ( уведомление получено в течение 30 рабочих дней)">{{ object.has_causes_of_failure_comment }}</td>
+   <td {% if object.has_sample_document_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_sample_document_comment != 'Да' and object.has_sample_document_comment != 'Не предусмотрено' and object.has_sample_document_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='example' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Наличие образца документа">{{ object.has_sample_document_comment }}</td>
+   <td {% if object.has_document_template_comment == "" %}bgcolor = '#eb5a21' {% elif object.has_document_template_comment != 'Да' and object.has_document_template_comment != 'Не предусмотрено' and object.has_document_template_comment != "" %}bgcolor = '#9c8880'{% endif %} data-campo='template' data-toggle="tooltip" data-placement="bottom" data-container="body" title="Обследование действий, реализованных на порталах ЕПГУ/РПГУ и в АИС СОЗ. Наличие шаблона (формы, бланка) документа (возможность заполнить шаблон (бланк) в электронном виде)">{{ object.has_document_template_comment }}</td>
+	</tr>
+{% endfor %}
+  </tbody>
+</table>
+    <div style="margin-left: 40px;margin-top: 10px">
+        <p align="left">Примечание:</p>
+        <ul style="list-style: none;text-align: left;">
+            <li class="list_with_red_marker"><span> - Поле не заполнено</span></li>
+            <li class="list_with_gray_marker"><span> - Неполадка в функционале предоставления электронной улуги</span></li>
+            <li class="list_with_white_marker"><span> - Нет неполадок в функционале предоставления электронной улуги</span></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+{% block content %}
+    <form method="post" action="{% url 'login'%}">
+        {% csrf_token %}
+        <table style="margin-left: 35%;margin-top: 7%">
+            <tr><td>
+                {% if form.errors %}
+                    <p style="">Неправильный логин или пароль. Пожалуйста, попробуйте еще раз.</p>
+                {% endif %}
+            </td></tr>
+            <tr><td>Имя пользователя</td></tr>
+            <tr><td>{{ form.username}}</td></tr>
+            <tr><td>Пароль</td></tr>
+            <tr><td>{{ form.password }}</td></tr>
+            <tr><td><button type="submit" class="btn btn-primary">Войти</button></td></tr>
+       </table>
+   </form>
+{% endblock %}
