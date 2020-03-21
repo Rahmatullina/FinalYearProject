@@ -33,6 +33,6 @@ def logout_view(request):
 def make_recognition(request):
     red = Image.open("./CloudAndGridREC/images/emcka.jpg")
     #result = recognize(image)
-    response = HttpResponse(content_type="image/jpeg")
+    response = HttpResponse(content_type="image/jpeg", status=200)
     red.save(response, "JPEG")
     return response
