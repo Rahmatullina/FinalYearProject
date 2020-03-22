@@ -31,8 +31,9 @@ def logout_view(request):
 
 @login_required(login_url='/login/', redirect_field_name='/make_recognition/')
 def make_recognition(request):
-    red = Image.open("./CloudAndGridREC/images/emcka.jpg")
-    #result = recognize(image)
+    image = cv2.imread("./CloudAndGridREC/images/emcka.jpg")
+    image = recognize(image)
+    image = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
     response = HttpResponse(content_type="image/jpeg")
-    red.save(response, "JPEG")
+    image.save(response, "JPEG")
     return response

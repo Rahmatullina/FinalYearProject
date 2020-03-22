@@ -25,7 +25,7 @@ SECRET_KEY = 'aaq%279%kq14!w%(2(^8n17#yt1f*4$j2lf7ksyj^tw6$y@6+n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'CloudAndGridREC.urls'
+ROOT_URLCONF = 'config.urls'
 
 
 TEMPLATES = [
