@@ -8,7 +8,7 @@ import cv2
 from CloudAndGridREC.recognize import recognize
 from CloudAndGridREC.extract_embeddings import extract_embeddings
 from CloudAndGridREC.train_model import train_model
-from CloudAndGridREC.emotion_recognition import emotion_recognize
+#from CloudAndGridREC.emotion_recognition import emotion_recognize
 from .forms import LoginForm
 # Create your views here.
 
@@ -51,7 +51,7 @@ def extract_and_train(request):
     return HttpResponse(html)
 
 
-@login_required(login_url='/login/', redirect_field_name='/emotion_recognize/')
-def emotion_recognize():
-    html = "<html><body>Emotion recognition is done : class is {}.</body></html>".format(emotion_recognize())
-    return HttpResponse(html)
+# @login_required(login_url='/login/', redirect_field_name='/emotion_recognize/')
+# def emotion_recognize():
+#     html = "<html><body>Emotion recognition is done : class is {}.</body></html>".format(emotion_recognize())
+#     return HttpResponse(html)
