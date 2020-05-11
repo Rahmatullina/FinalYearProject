@@ -49,7 +49,7 @@ def make_recognition(request):
 
         format, imgstr = data.split(';base64,')
         file_bytes = numpy.asarray(bytearray(base64.b64decode(imgstr)), dtype=numpy.uint8)
-        image = cv2.imdecode(file_bytes, 0)  # Here as well I get returned nothing
+        image = cv2.imdecode(file_bytes, 1)  # Here as well I get returned nothing
         image = recognize(image)
         image = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
         img_buffer = io.StringIO()
