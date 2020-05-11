@@ -10,8 +10,13 @@ urlpatterns = [
 
     re_path(r'^make_recognition/$', views.make_recognition, name='make_recognition'),
 
-    re_path(r'^extract_and_train/$', views.extract_and_train, name='extract_and_train')
+    re_path(r'^extract_and_train/$', views.extract_and_train, name='extract_and_train'),
 
-    #re_path(r'^emotion_recognize/$', views.emotion_recognize, name='emotion_recognize')
+    re_path(r'^emotion_recognize/$', views.emotion_recognize, name='emotion_recognize'),
+
+    re_path(r'^record/$', views.record, name='record'),
+
+    re_path(r'^rec/$', views.rec, name='rec')
+
 
 ]
