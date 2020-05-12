@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e41c98ee-1fac-4d04-bd53-8ad097dfca29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/CloudAndGridREC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CloudAndGridREC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="e41c98ee-1fac-4d04-bd53-8ad097dfca29" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +34,9 @@
           <entry key="html" value="20" />
           <entry key="js" value="8" />
           <entry key="md" value="1" />
-          <entry key="py" value="38" />
+          <entry key="py" value="39" />
           <entry key="svg" value="1" />
-          <entry key="txt" value="7" />
+          <entry key="txt" value="8" />
           <entry key="yml" value="3" />
         </counts>
       </usages-collector>
@@ -53,8 +48,8 @@
           <entry key="HTML" value="20" />
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="38" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="39" />
           <entry key="SVG" value="1" />
           <entry key="YAML" value="3" />
         </counts>
@@ -96,15 +91,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EmoPy/EmoPy/src/fermodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="1870">
               <caret line="110" selection-start-line="110" selection-end-line="110" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EmoPy/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EmoPy/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306" />
           </provider>
         </entry>
       </file>
@@ -232,26 +243,6 @@
               <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
               <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
-              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
-              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
-              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
-              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
-              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
-              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -324,6 +315,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -339,7 +331,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.33551556" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.30932897" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.14893617" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,8 +370,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/static/app/styles/form_style.css" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$EXa8332.23825/startbootstrap-freelancer-gh-pages/index.html" />
     <entry file="file://$PROJECT_DIR$/app/templates/app/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -697,14 +687,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EmoPy/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EmoPy/EmoPy/src/fermodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="1870">
           <caret line="110" selection-start-line="110" selection-end-line="110" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmoPy/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306" />
       </provider>
     </entry>
   </component>
