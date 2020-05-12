@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e41c98ee-1fac-4d04-bd53-8ad097dfca29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CloudAndGridREC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CloudAndGridREC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +39,7 @@
           <entry key="html" value="20" />
           <entry key="js" value="8" />
           <entry key="md" value="1" />
-          <entry key="py" value="37" />
+          <entry key="py" value="38" />
           <entry key="svg" value="1" />
           <entry key="txt" value="7" />
           <entry key="yml" value="3" />
@@ -54,19 +54,19 @@
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="37" />
+          <entry key="Python" value="38" />
           <entry key="SVG" value="1" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Dockerfile" value="83" />
+          <entry key="Dockerfile" value="93" />
           <entry key="Procfile" value="24" />
           <entry key="css" value="2" />
           <entry key="html" value="1571" />
           <entry key="js" value="366" />
-          <entry key="py" value="3586" />
+          <entry key="py" value="3600" />
           <entry key="txt" value="16" />
           <entry key="yml" value="9" />
         </counts>
@@ -75,11 +75,11 @@
         <counts>
           <entry key="AspectJ" value="24" />
           <entry key="CSS" value="2" />
-          <entry key="Dockerfile" value="83" />
+          <entry key="Dockerfile" value="93" />
           <entry key="HTML" value="1571" />
           <entry key="JavaScript" value="366" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="3586" />
+          <entry key="Python" value="3600" />
           <entry key="YAML" value="9" />
         </counts>
       </usages-collector>
@@ -90,10 +90,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="59" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="59" />
+            <state relative-caret-position="-952">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EmoPy/EmoPy/src/fermodel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
               <folding>
-                <element signature="e#0#88#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,21 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+            <state>
+              <caret selection-start-column="2" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -126,27 +122,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CloudAndGridREC/extract_embeddings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1237">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CloudAndGridREC/train_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#32#78#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -163,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="238">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -188,7 +163,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/EmoPy" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -215,10 +190,10 @@
         <option value="$PROJECT_DIR$/heroku.yml" />
         <option value="$PROJECT_DIR$/CloudAndGridREC/recognize.py" />
         <option value="$PROJECT_DIR$/app/static/app/scripts/rec_client.js" />
-        <option value="$PROJECT_DIR$/app/views.py" />
-        <option value="$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py" />
+        <option value="$PROJECT_DIR$/app/views.py" />
       </list>
     </option>
   </component>
@@ -234,6 +209,7 @@
     <option name="width" value="1320" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -251,6 +227,31 @@
               <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
+              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
+              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
+              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
+              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
+              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
+              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
+              <item name="EmoPy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -264,7 +265,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cloud-app-server1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -323,7 +324,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -339,7 +339,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.33551556" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.08183306" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.30932897" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,7 +378,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$EXa8332.25481/startbootstrap-freelancer-gh-pages/index.html" />
     <entry file="file://$PROJECT_DIR$/app/static/app/styles/form_style.css" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$EXa8332.23825/startbootstrap-freelancer-gh-pages/index.html" />
     <entry file="file://$PROJECT_DIR$/app/templates/app/base.html">
@@ -619,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/extract_embeddings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1237">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CloudAndGridREC/train_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-81">
@@ -677,30 +669,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py">
+    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/extract_embeddings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="59" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#88#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmoPy/EmoPy/src/fermodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
