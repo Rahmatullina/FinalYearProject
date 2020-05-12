@@ -97,10 +97,10 @@ class FERModel:
         model_suffix = ''.join(sorted_indices)
         #Modify the path to choose the model file and the emotion map that you want to use
         if(model_suffix == '0123456'):
-            model_file = './EmoPy/EmoPy/models/conv_model_%s.h5' % model_suffix
+            model_file = './EmoPy/models/conv_model_%s.h5' % model_suffix
         else:
-            model_file = './EmoPy/EmoPy/models/conv_model_%s.hdf5' % model_suffix
-        emotion_map_file = './EmoPy/EmoPy/models/conv_emotion_map_%s.json' % model_suffix
+            model_file = './EmoPy/models/conv_model_%s.hdf5' % model_suffix
+        emotion_map_file = './EmoPy/models/conv_emotion_map_%s.json' % model_suffix
         emotion_map = json.loads(open(emotion_map_file).read())
         return load_model( model_file), emotion_map
 
