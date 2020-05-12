@@ -78,4 +78,5 @@ def recognize(image,#BGR format
 			cv2.putText(image, text, (startX, y),
 				cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
 	# show the output image
+	print("[INFO] Recognition ended")
 	return image
