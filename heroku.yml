@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: gunicorn CloudAndGridREC.wsgi --preload --bind 0.0.0.0:
+  web: gunicorn CloudAndGridREC.wsgi --preload --bind 0.0.0.0:9000
