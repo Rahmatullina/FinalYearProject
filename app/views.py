@@ -9,7 +9,7 @@ from CloudAndGridREC.recognize import recognize
 from CloudAndGridREC.extract_embeddings import extract_embeddings
 from CloudAndGridREC.train_model import train_model
 import datetime
-from EmoPy.EmoPy.src.fermodel import FERModel
+from EmoPy.src.fermodel import FERModel
 from .forms import LoginForm
 from .models import Educator
 import requests
