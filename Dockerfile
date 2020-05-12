@@ -14,9 +14,7 @@ RUN pip install -r requirements.txt
 
 WORKDIR .
 #Install EmoPy
-#RUN git clone https://github.com/thoughtworksarts/EmoPy.git
-#RUN cd EmoPy
-#RUN pip install -r requirements.txt
+RUN git clone https://github.com/thoughtworksarts/EmoPy.git
 
 WORKDIR /app
 # Copy application code.
