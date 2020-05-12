@@ -40,4 +40,4 @@ RUN python manage.py collectstatic --noinput --clear && \
 
 
 # Run application
-CMD gunicorn CloudAndGridREC.wsgi --preload --bind 0.0.0.0:9000
+CMD gunicorn CloudAndGridREC.wsgi --preload --bind 0.0.0.0:
