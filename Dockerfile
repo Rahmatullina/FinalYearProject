@@ -7,12 +7,18 @@ ENV PYTHONUNBUFFERED=1 \
 
 RUN apt-get update -y && \
     apt-get install -y libsm6 libxext6 libxrender-dev
-WORKDIR /app
 
 # Install Python requirements.
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
+WORKDIR .
+#Install EmoPy
+RUN git clone https://github.com/thoughtworksarts/EmoPy.git
+RUN cd EmoPy
+RUN pip install -r requirements.txt
+
+WORKDIR /app
 # Copy application code.
 COPY . .
 

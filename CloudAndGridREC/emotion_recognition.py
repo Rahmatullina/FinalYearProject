@@ -1,11 +1,12 @@
 # from EmoPy.src.fermodel import FERModel
-# from pkg_resources import resource_filename
 #
 #
-# def emotion_recognize():
+# def emotion_rec(image):
 #     target_emotions = ['calm', 'anger', 'happiness']
 #     model = FERModel(target_emotions, verbose=True)
 #
 #     print('Predicting on happy image...')
-#     emotion = model.predict(resource_filename('EmoPy.examples','image_data/sample_happy_image.png'))
+#     #image should be in BGR format
+#     emotion = model.predict_from_ndarray(image)
+#     print('Prediction emtion ended')
 #     return emotion
