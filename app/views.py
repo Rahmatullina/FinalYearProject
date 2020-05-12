@@ -48,16 +48,19 @@ def make_recognition(request):
         #image.save(response, "JPEG")
 
         format, imgstr = data.split(';base64,')
-        file_bytes = numpy.asarray(bytearray(base64.b64decode(imgstr)), dtype=numpy.uint8)
-        image = cv2.imdecode(file_bytes, 1)  # Here as well I get returned nothing
+        file_bytes = base64.b64decode(imgstr)
+        image = Image.open(io.BytesIO(file_bytes))
+        print(image)
+        image = cv2.cvtColor(numpy.array(image), cv2.COLOR_RGB2BGR)
         image = recognize(image)
-        image = Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-        img_buffer = io.StringIO()
+        image = cv2.cvtColor(numpy.array(image), cv2.COLOR_BGR2RGB)
+        image = Image.fromarray(image)
+        img_buffer = io.BytesIO()
         image.save(img_buffer, format="JPEG")
         img_str = base64.b64encode(img_buffer.getvalue())
 
         from django.http import JsonResponse
-        return JsonResponse({'image': img_str})
+        return JsonResponse({'image': img_str.decode('utf-8')})
 
 
 

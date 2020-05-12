@@ -30,7 +30,7 @@ var sendBase64ToServer = function(base64){
     request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
     request.onload = function() {
       result = JSON.parse(request.responseText);
-      document.getElementById('screenshots').innerHTML = '<img src = "' + result.image + '">';
+      document.getElementById('screenshots').innerHTML = '<img src="data:image/jpeg;base64,' + result.image + '"/>';
 };
     request.send(JSON.stringify(data));
 
