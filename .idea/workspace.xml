@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e41c98ee-1fac-4d04-bd53-8ad097dfca29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CloudAndGridREC/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heroku.yml" beforeDir="false" afterPath="$PROJECT_DIR$/heroku.yml" afterDir="false" />
@@ -37,7 +38,7 @@
           <entry key="css" value="7" />
           <entry key="html" value="20" />
           <entry key="js" value="8" />
-          <entry key="py" value="25" />
+          <entry key="py" value="26" />
           <entry key="svg" value="1" />
           <entry key="txt" value="6" />
           <entry key="yml" value="3" />
@@ -51,7 +52,7 @@
           <entry key="HTML" value="20" />
           <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="25" />
+          <entry key="Python" value="26" />
           <entry key="SVG" value="1" />
           <entry key="YAML" value="3" />
         </counts>
@@ -63,7 +64,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="1571" />
           <entry key="js" value="334" />
-          <entry key="py" value="3243" />
+          <entry key="py" value="3244" />
           <entry key="txt" value="10" />
           <entry key="yml" value="9" />
         </counts>
@@ -76,7 +77,7 @@
           <entry key="HTML" value="1571" />
           <entry key="JavaScript" value="334" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="3243" />
+          <entry key="Python" value="3244" />
           <entry key="YAML" value="9" />
         </counts>
       </usages-collector>
@@ -105,20 +106,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heroku.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+              <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CloudAndGridREC/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="131" column="79" selection-start-line="131" selection-start-column="79" selection-end-line="131" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="64" selection-start-column="64" selection-end-column="64" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -126,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+            <state relative-caret-position="391">
+              <caret line="35" column="57" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -155,15 +165,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2310">
               <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/app/scripts/jquery.cookie.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -212,7 +213,6 @@
         <option value="$PROJECT_DIR$/app/templates/app/main_page/login.html" />
         <option value="$PROJECT_DIR$/app/templates/app/main_page/lecturer_page.html" />
         <option value="$PROJECT_DIR$/app/admin.py" />
-        <option value="$PROJECT_DIR$/CloudAndGridREC/settings.py" />
         <option value="$PROJECT_DIR$/config/settings/base.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/app/templates/app/main_page/client.html" />
@@ -223,9 +223,10 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/app/views.py" />
         <option value="$PROJECT_DIR$/app/templates/app/main_page/record_page.html" />
-        <option value="$PROJECT_DIR$/heroku.yml" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/CloudAndGridREC/settings.py" />
+        <option value="$PROJECT_DIR$/heroku.yml" />
       </list>
     </option>
   </component>
@@ -256,28 +257,7 @@
             <path>
               <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
               <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
               <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -518,13 +498,6 @@
         <state relative-caret-position="-2032" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -672,24 +645,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heroku.yml">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="131" column="79" selection-start-line="131" selection-start-column="79" selection-end-line="131" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="391">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/heroku.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="64" selection-start-column="64" selection-end-column="64" />
+        <state relative-caret-position="68">
+          <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="55" />
         </state>
       </provider>
     </entry>
