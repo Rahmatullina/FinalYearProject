@@ -16,7 +16,7 @@ WORKDIR .
 #Install EmoPy
 RUN git clone https://github.com/thoughtworksarts/EmoPy.git
 COPY /fermodel.py /EmoPy/EmoPy/src
-COPY /EmoPy/EmoPy .
+COPY /EmoPy/EmoPy /
 WORKDIR /app
 # Copy application code.
 COPY . .
@@ -45,4 +45,4 @@ RUN python manage.py collectstatic --noinput --clear && \
 
 
 # Run application
-CMD gunicorn CloudAndGridREC.wsgi --preload --bind 0.0.0.0:$PORT --timeout 500
+CMD gunicorn CloudAndGridREC.wsgi --preload --bind 0.0.0.0:$PORT --timeout 500 --max-requests 12
