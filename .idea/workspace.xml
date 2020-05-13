@@ -34,7 +34,7 @@
           <entry key="html" value="20" />
           <entry key="js" value="8" />
           <entry key="md" value="1" />
-          <entry key="py" value="48" />
+          <entry key="py" value="49" />
           <entry key="svg" value="1" />
           <entry key="txt" value="10" />
           <entry key="yml" value="3" />
@@ -49,7 +49,7 @@
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="48" />
+          <entry key="Python" value="49" />
           <entry key="SVG" value="1" />
           <entry key="YAML" value="3" />
         </counts>
@@ -61,7 +61,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="1571" />
           <entry key="js" value="366" />
-          <entry key="py" value="3708" />
+          <entry key="py" value="3709" />
           <entry key="txt" value="17" />
           <entry key="yml" value="9" />
         </counts>
@@ -74,7 +74,7 @@
           <entry key="HTML" value="1571" />
           <entry key="JavaScript" value="366" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="3708" />
+          <entry key="Python" value="3709" />
           <entry key="YAML" value="9" />
         </counts>
       </usages-collector>
@@ -100,11 +100,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
               <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CloudAndGridREC/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -172,7 +181,6 @@
         <option value="$PROJECT_DIR$/app/static/app/scripts/jquery.cookie.js" />
         <option value="$PROJECT_DIR$/app/templates/app/main_page/record_page.html" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/CloudAndGridREC/settings.py" />
         <option value="$PROJECT_DIR$/heroku.yml" />
         <option value="$PROJECT_DIR$/CloudAndGridREC/recognize.py" />
         <option value="$PROJECT_DIR$/app/static/app/scripts/rec_client.js" />
@@ -183,6 +191,7 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/fermodel.py" />
         <option value="$PROJECT_DIR$/app/views.py" />
+        <option value="$PROJECT_DIR$/CloudAndGridREC/settings.py" />
       </list>
     </option>
   </component>
@@ -209,6 +218,11 @@
           <expand>
             <path>
               <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloudAndGridREC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
               <item name="CloudAndGridREC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -293,7 +307,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -311,7 +325,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50226927" side_tool="true" visible="true" weight="0.36497545" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4977307" visible="true" weight="0.36497545" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4977307" visible="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -522,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="131" column="79" selection-start-line="131" selection-start-column="79" selection-end-line="131" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heroku.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -655,6 +662,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloudAndGridREC/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
         </state>
       </provider>
     </entry>
