@@ -16,7 +16,6 @@ WORKDIR .
 #Install EmoPy
 RUN git clone https://github.com/thoughtworksarts/EmoPy.git
 COPY /fermodel.py /EmoPy/EmoPy/src
-COPY /EmoPy/EmoPy /
 WORKDIR /app
 # Copy application code.
 COPY . .
