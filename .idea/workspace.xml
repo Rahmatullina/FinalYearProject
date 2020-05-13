@@ -2,6 +2,187 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e41c98ee-1fac-4d04-bd53-8ad097dfca29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00038.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00045.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00054.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00055.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00059.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00060.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00061.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00062.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00063.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00064.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00066.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00067.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00068.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00069.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00070.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00072.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00073.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00074.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00075.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00076.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00077.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00078.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00079.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00081.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00083.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00084.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00085.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00086.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00087.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00088.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00089.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00090.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00092.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00093.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00094.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00095.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00099.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/colya/00128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00054.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00055.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudAndGridREC/dataset/emiliya/00059.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +244,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="1571" />
           <entry key="js" value="366" />
-          <entry key="py" value="3888" />
+          <entry key="py" value="3891" />
           <entry key="txt" value="17" />
           <entry key="yml" value="9" />
         </counts>
@@ -76,7 +257,7 @@
           <entry key="HTML" value="1571" />
           <entry key="JavaScript" value="366" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="3888" />
+          <entry key="Python" value="3891" />
           <entry key="YAML" value="9" />
         </counts>
       </usages-collector>
@@ -87,11 +268,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-              <folding>
-                <element signature="e#0#88#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -105,11 +283,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="59">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -132,10 +310,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fermodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1070">
+            <state relative-caret-position="-1019">
               <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -642,6 +820,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CloudAndGridREC/emotion_recognition.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -649,30 +834,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views.py">
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="e#0#88#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="59">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fermodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1070">
+        <state relative-caret-position="-1019">
           <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
         </state>
       </provider>
     </entry>
