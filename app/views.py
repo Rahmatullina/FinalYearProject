@@ -75,7 +75,7 @@ def extract_and_train(request):
 @login_required(login_url='/login/', redirect_field_name='/emotion_recognize/')
 def emotion_recognize(request):
     image = cv2.imread("./CloudAndGridREC/images/emcka.jpg")
-    target_emotions = ['calm', 'anger', 'happiness']
+    target_emotions = ['calm', 'anger', 'happiness', 'surprise', 'disgust', 'fear', 'sadness']
     model = FERModel(target_emotions, verbose=True)
 
     print('Predicting on happy image...')

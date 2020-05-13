@@ -92,18 +92,24 @@ class FERModel:
         """
         Initializes pre-trained deep learning model for the set of target emotions supplied by user.
         """
+        print('[INFO] Started _choose_model_from_target_emotions')
         model_indices = [self.emotion_index_map[emotion] for emotion in self.target_emotions]
+        print('[INFO] Accounted model_indices')
         sorted_indices = [str(idx) for idx in sorted(model_indices)]
+        print('[INFO] Accounted sorted_indices')
         model_suffix = ''.join(sorted_indices)
+        print('[INFO] Accounted model_suffix')
+        print(model_suffix)
         #Modify the path to choose the model file and the emotion map that you want to use
+
         if(model_suffix == '0123456'):
             model_file = './EmoPy/EmoPy/models/conv_model_%s.h5' % model_suffix
         else:
             model_file = './EmoPy/EmoPy/models/conv_model_%s.hdf5' % model_suffix
         emotion_map_file = './EmoPy/EmoPy/models/conv_emotion_map_%s.json' % model_suffix
-        print('difined file paths')
+        print('[INFO] Defined file paths')
         emotion_map = json.loads(open(emotion_map_file).read())
-        print('loaded emotion_map')
+        print('[INFO] Loaded emotion_map')
         return load_model( model_file), emotion_map
 
     def _print_prediction(self, prediction):
