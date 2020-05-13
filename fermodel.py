@@ -101,7 +101,9 @@ class FERModel:
         else:
             model_file = './EmoPy/EmoPy/models/conv_model_%s.hdf5' % model_suffix
         emotion_map_file = './EmoPy/EmoPy/models/conv_emotion_map_%s.json' % model_suffix
+        print('difined file paths')
         emotion_map = json.loads(open(emotion_map_file).read())
+        print('loaded emotion_map')
         return load_model( model_file), emotion_map
 
     def _print_prediction(self, prediction):
