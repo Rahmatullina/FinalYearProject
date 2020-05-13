@@ -14,9 +14,9 @@ RUN pip install -r requirements.txt
 
 
 #Install EmoPy
-#WORKDIR .
-#RUN git clone https://github.com/thoughtworksarts/EmoPy.git
-#COPY /fermodel.py /EmoPy/EmoPy/src
+WORKDIR .
+RUN git clone https://github.com/thoughtworksarts/EmoPy.git
+COPY /fermodel.py /EmoPy/EmoPy/src
 WORKDIR /app
 # Copy application code.
 COPY . .
