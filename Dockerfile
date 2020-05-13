@@ -12,10 +12,11 @@ RUN apt-get update -y && \
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-WORKDIR .
+
 #Install EmoPy
-RUN git clone https://github.com/thoughtworksarts/EmoPy.git
-COPY /fermodel.py /EmoPy/EmoPy/src
+#WORKDIR .
+#RUN git clone https://github.com/thoughtworksarts/EmoPy.git
+#COPY /fermodel.py /EmoPy/EmoPy/src
 WORKDIR /app
 # Copy application code.
 COPY . .

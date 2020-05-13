@@ -9,7 +9,7 @@ from CloudAndGridREC.recognize import recognize
 from CloudAndGridREC.extract_embeddings import extract_embeddings
 from CloudAndGridREC.train_model import train_model
 import datetime
-from EmoPy.EmoPy.src.fermodel import FERModel
+#from EmoPy.EmoPy.src.fermodel import FERModel
 from .forms import LoginForm
 from .models import Educator
 import requests
@@ -76,13 +76,14 @@ def extract_and_train(request):
 def emotion_recognize(request):
     image = cv2.imread("./CloudAndGridREC/images/emcka.jpg")
     target_emotions = ['calm', 'anger', 'happiness', 'surprise', 'disgust', 'fear', 'sadness']
-    model = FERModel(target_emotions, verbose=True)
+    #model = FERModel(target_emotions, verbose=True)
 
     print('Predicting on happy image...')
     #image should be in BGR format
-    emotion = model.predict_from_ndarray(image)
+    #emotion = model.predict_from_ndarray(image)
     print('Prediction emtion ended')
-    html = "<html><body>Emotion is " + emotion + " </body></html>"
+    #html = "<html><body>Emotion is " + emotion + " </body></html>"
+    html="hello"
     return HttpResponse(html)
 
 
