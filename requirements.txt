@@ -11,16 +11,3 @@ django-sendgrid-v5==0.8.0
 Pillow==6.2.0
 scikit-learn==0.21.3
 requests
-coverage==4.5.3
-keras==2.2.4
-lasagne
-pytest
-matplotlib>2.1.0
-numpy==1.17.4
-scikit-image>=0.13.1
-scikit-neuralnetwork>=0.7
-scipy==1.0.0
-tensorflow==1.13.1
-h5py
-pydot
-graphviz

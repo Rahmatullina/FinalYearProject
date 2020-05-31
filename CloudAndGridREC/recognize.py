@@ -3,14 +3,16 @@ import imutils
 import pickle
 import cv2
 import os
-
-
+from EmoPy.EmoPy.src.fermodel import FERModel
 def recognize(image,#BGR format
 			  pathDetector='CloudAndGridREC/face_detection_model',
 			  pathEmbModel='CloudAndGridREC/openface_nn4.small2.v1.t7',
 			  pathRecognizer='CloudAndGridREC/output/recognizer.pickle',
 			  pathLabelEnc='CloudAndGridREC/output/le.pickle',
 			  conf=0.5):
+
+	student_names=[]
+	student_emotions=[]
 	# load our serialized face detector from disk
 	print("[INFO] loading face detector...")
 	protoPath = os.path.sep.join([pathDetector, "deploy.prototxt"])
@@ -59,6 +61,8 @@ def recognize(image,#BGR format
 			# construct a blob for the face ROI, then pass the blob
 			# through our face embedding model to obtain the 128-d
 			# quantification of the face
+
+			face_emo, face_emo_index = recognize_emo(face)
 			faceBlob = cv2.dnn.blobFromImage(face, 1.0 / 255, (96, 96),
 				(0, 0, 0), swapRB=True, crop=False)
 			embedder.setInput(faceBlob)
@@ -68,10 +72,11 @@ def recognize(image,#BGR format
 			j = np.argmax(preds)
 			proba = preds[j]
 			name = le.classes_[j]
-
+			student_names.append(name)
+			student_emotions.append(face_emo)
 			# draw the bounding box of the face along with the associated
 			# probability
-			text = "{}: {:.2f}%".format(name, proba * 100)
+			text = "{}: {:.2f}% is {}".format(name, proba * 100, face_emo)
 			y = startY - 10 if startY - 10 > 10 else startY + 10
 			cv2.rectangle(image, (startX, startY), (endX, endY),
 			(0, 0, 255), 2)
@@ -79,4 +84,10 @@ def recognize(image,#BGR format
 				cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
 	# show the output image
 	print("[INFO] Recognition ended")
-	return image
+	return image, student_names ,student_emotions
+
+def recognize_emo(image):
+	target_emotions=set(['calm', 'disgust', 'surprise'])
+	fermodel = FERModel(target_emotions=target_emotions)
+	return fermodel.predict_from_ndarray(image)
+	return "happiness", "3"

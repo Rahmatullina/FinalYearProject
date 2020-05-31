@@ -1,0 +1,166 @@
+{
+  "projectName": "EmoPy",
+  "projectOwner": "thoughtworksarts",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "angelicaperez37",
+      "name": "angelicaperez37",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11094785?v=4",
+      "profile": "https://github.com/angelicaperez37",
+      "contributions": [
+        "code",
+        "blog",
+        "doc"
+      ]
+    },
+    {
+      "login": "sbriley",
+      "name": "sbriley",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/19356750?v=4",
+      "profile": "https://github.com/sbriley",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "stania1",
+      "name": "Sofia Tania",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1446811?v=4",
+      "profile": "http://tania.pw",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "microcosm",
+      "name": "Andrew McWilliams",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/756527?v=4",
+      "profile": "https://jahya.net",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "weberswords",
+      "name": "Webs",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/10860893?v=4",
+      "profile": "http://www.websonthewebs.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "saragw6",
+      "name": "Sara GW",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/14201413?v=4",
+      "profile": "https://github.com/saragw6",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "meganesu",
+      "name": "Megan Sullivan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3609989?v=4",
+      "profile": "http://www.linkedin.com/in/meganesu",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "sadnantw",
+      "name": "sadnantw",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/33844894?v=4",
+      "profile": "https://github.com/sadnantw",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "xuv",
+      "name": "Julien Deswaef",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/192539?v=4",
+      "profile": "http://xuv.be",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "sinbycos",
+      "name": "Tanushri Chakravorty",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/10910251?v=4",
+      "profile": "https://github.com/sinbycos",
+      "contributions": [
+        "code",
+        "example"
+      ]
+    },
+    {
+      "login": "linas",
+      "name": "Linas Vepštas",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/94368?v=4",
+      "profile": "http://linas.org",
+      "contributions": [
+        "plugin"
+      ]
+    },
+    {
+      "login": "emilysachs",
+      "name": "Emily Sachs",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12832369?v=4",
+      "profile": "https://emilysachs.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "dianagamedi",
+      "name": "Diana Gamez",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/50743819?v=4",
+      "profile": "https://github.com/dianagamedi",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "dtoakley",
+      "name": "dtoakley",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2144730?v=4",
+      "profile": "https://github.com/dtoakley",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "anjutiwari",
+      "name": "Anju",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4986913?v=4",
+      "profile": "https://github.com/anjutiwari",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "satishdash",
+      "name": "Satish Dash",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/11196432?v=4",
+      "profile": "https://github.com/satishdash",
+       "contributions": [
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

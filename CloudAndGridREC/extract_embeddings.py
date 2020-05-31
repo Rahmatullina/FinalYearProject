@@ -35,9 +35,10 @@ def extract_embeddings(pathDetector='CloudAndGridREC/face_detection_model',
 	# loop over the image paths
 	for (i, imagePath) in enumerate(imagePaths):
 		# extract the person name from the image path
-		print("[INFO] processing image {}/{}".format(i + 1,
-			len(imagePaths)))
+		print("[INFO] processing image {}/{}".format(i + 1,len(imagePaths)))
 		name = imagePath.split(os.path.sep)[-2]
+		print(imagePath)
+		print(name)
 		# load the image, resize it to have a width of 600 pixels (while
 		# maintaining the aspect ratio), and then grab the image
 		# dimensions
